@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33A20128-6A3B-443A-89EE-6243BED989E0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>money.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>MoneySecAEGold</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>MoneySecurityAccountantEditionGold</RootNamespace>
+    <StartupObject>MoneySecurityAccountantEditionGold.LoaderF</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>Current</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MoneySecAEGold.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MoneySecAEGold.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="Scripting">
+      <Guid>{420B2830-E718-11CF-893D-00A0C9054228}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <Name>CrystalDecisions.ReportSource</Name>
+      <HintPath>..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <Name>CrystalDecisions.Shared</Name>
+      <HintPath>..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <Name>CrystalDecisions.Windows.Forms</Name>
+      <HintPath>..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACGoldF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActivationF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAddF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEditF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllPrintCheckF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckInput.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColumnSorter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DayListF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBConnection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DIAddF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirListF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIViewF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditViewF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encoding.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorLog.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GhPrintF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HBAddF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HBEditF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpListF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoMoneyMo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HVAddF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HVEditF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBoxF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoaderF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoshtariListF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegAdminF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registry.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportListF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportModeF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResidF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SGAddF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SGEditF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SGListF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShamsiDate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnlockF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnSGAddF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnSGEditF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFindF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="Icon.ico" />
+    <Content Include="money.ico" />
+    <EmbeddedResource Include="ACGoldF.resx">
+      <DependentUpon>ACGoldF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivationF.resx">
+      <DependentUpon>ActivationF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddF.resx">
+      <DependentUpon>AddF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAddF.resx">
+      <DependentUpon>AdminAddF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEditF.resx">
+      <DependentUpon>AdminEditF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllPrintCheckF.resx">
+      <DependentUpon>AllPrintCheckF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckF.resx">
+      <DependentUpon>CheckF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayListF.resx">
+      <DependentUpon>DayListF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIAddF.resx">
+      <DependentUpon>DIAddF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirListF.resx">
+      <DependentUpon>DirListF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIViewF.resx">
+      <DependentUpon>DIViewF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditF.resx">
+      <DependentUpon>EditF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditViewF.resx">
+      <DependentUpon>EditViewF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindF.resx">
+      <DependentUpon>FindF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GhPrintF.resx">
+      <DependentUpon>GhPrintF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HBAddF.resx">
+      <DependentUpon>HBAddF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HBEditF.resx">
+      <DependentUpon>HBEditF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpListF.resx">
+      <DependentUpon>HelpListF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HVAddF.resx">
+      <DependentUpon>HVAddF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HVEditF.resx">
+      <DependentUpon>HVEditF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputBoxF.resx">
+      <DependentUpon>InputBoxF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoaderF.resx">
+      <DependentUpon>LoaderF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginF.resx">
+      <DependentUpon>LoginF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoshtariListF.resx">
+      <DependentUpon>MoshtariListF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxF.resx">
+      <DependentUpon>MsgBoxF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintF.resx">
+      <DependentUpon>PrintF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegAdminF.resx">
+      <DependentUpon>RegAdminF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportListF.resx">
+      <DependentUpon>ReportListF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportModeF.resx">
+      <DependentUpon>ReportModeF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResidF.resx">
+      <DependentUpon>ResidF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SGAddF.resx">
+      <DependentUpon>SGAddF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SGEditF.resx">
+      <DependentUpon>SGEditF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SGListF.resx">
+      <DependentUpon>SGListF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools.resx">
+      <DependentUpon>Tools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnlockF.resx">
+      <DependentUpon>UnlockF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnSGAddF.resx">
+      <DependentUpon>UnSGAddF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnSGEditF.resx">
+      <DependentUpon>UnSGEditF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewF.resx">
+      <DependentUpon>ViewF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFindF.resx">
+      <DependentUpon>ViewFindF.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

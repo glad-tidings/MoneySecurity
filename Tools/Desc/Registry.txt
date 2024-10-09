@@ -1,0 +1,44 @@
+[HKEY_LOCAL_MACHINE\SOFTWARE\Money Security\Backup]
+"BackupPath"=""			--> String
+"AutoBackup"=""			--> String
+"LastBackup"=""			--> String
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[HKEY_LOCAL_MACHINE\SOFTWARE\Money Security\Version]
+"Name"="Money Security"		--> String
+"Version"="3.3"			--> String
+"Special"="Zagros Mobile"		--> String
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[HKEY_LOCAL_MACHINE\SOFTWARE\Money Security\Register]
+"FirstName"=""			--> String
+"LastName"=""			--> String
+"SerialNumber"=""		--> String
+"ActiveCode"=""			--> String
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[HKEY_CURRENT_USER\SOFTWARE\Money Security\Version]
+"Name"="Money Security"		--> String
+"Version"="3.3"			--> String
+"Special"="Zagros Mobile"		--> String
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[HKEY_CLASSES_ROOT\.bum]
+@="MoneySec"
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[HKEY_CLASSES_ROOT\MoneySec]
+@="Money Security Backup"
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[HKEY_CLASSES_ROOT\MoneySec\shell\open\command]
+@=""
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[HKEY_CLASSES_ROOT\MoneySec\DefaultIcon]
+@=""
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Money Security]
+"HelpLink"=""			--> String
+"Readme"=""			--> String
+"UninstallPath"=""			--> String
+"InstallLocation"=""		--> String
+"Publisher"="Navid SaltanatPoori"	--> String
+"VersionMajor"="3"		--> String
+"VersionMinor"="1"		--> String
+"UninstallString"=""		--> String
+"DisplayName"="Money Security"	--> String
+"DisplayIcon"=""			--> String
