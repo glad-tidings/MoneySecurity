@@ -3,4 +3,4 @@ Accounting and loans management system
 
 
 
-![](http://visit.parselecom.com/Api/Visit/7/8E402A)
+![](http://visit.parselecom.com/Api/Visit/glad-tidings/MoneySecurity/8E402A)
